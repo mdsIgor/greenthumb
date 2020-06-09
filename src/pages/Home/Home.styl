@@ -1,4 +1,6 @@
 @import "../../styles/settings/variables.styl";
+$bg-img = "../../images/hero.png";
+
 
 .home {
     display: flex;
@@ -6,50 +8,28 @@
     padding-top: 30px;
     justify-content: center;
 
-    &__heading{
-        padding: 30px 0;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 30%;
+  >.content-wrapper {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+     flex-basis: 30%;
+  }
 
-        &__title {
-            font-size: 66px;
-            font-weight: bold;
-            margin: 0;
-            margin-bottom: 30px;
-        }
+
+
+  >.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+
+    >.bg-image{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url($bg-img);
     }
+  }
 
-    &__hero{
-        flex-basis: 60%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        margin-left: -128px;
-
-        img {
-            flex-shrink: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /*
-        &__image{
-            background-image: url(../../assets/images/hero.png);
-            background-size: cover;
-            height: 100%;
-            width: auto;
-        }
-        */
-    }
-}
-
-.logo-wrapper {
-    flex-grow: 1;
-}
-
-.heading-wrapper {
-    flex-grow: 2;
 }
