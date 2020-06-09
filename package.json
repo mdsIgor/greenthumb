@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "dependencies": {
     "axios": "^0.19.2",
+    "classnames": "^2.2.6",
     "fontfaceobserver": "^2.1.0",
     "gatsby": "^2.19.7",
     "gatsby-alias-imports": "^1.0.2",

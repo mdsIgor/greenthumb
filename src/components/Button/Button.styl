@@ -1,0 +1,43 @@
+@import "../../styles/settings/variables.styl";
+
+.button {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 19px;
+
+    span{
+        display: none;
+    }
+
+    &-light {
+        background-color: $color-white;
+        color: $color-green-dark;
+        border: 1px solid $color-green-dark;
+    }
+
+    &-dark {
+        background-color: $color-green-dark;
+        color: $color-white;
+    }
+
+    &-right-arrow {
+        &:before{
+            content: "\01F862";
+            margin-right: 13px;
+        }
+    }
+
+
+    &-left-arrow {
+        &::before{
+            content: "\1F860";
+            margin-right: 13px;
+        }
+    }
+}
