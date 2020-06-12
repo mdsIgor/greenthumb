@@ -1,7 +1,7 @@
 @import "../../styles/settings/variables.styl";
 
 .button {
-    width: 170px;
+    width: 174px;
     height: 50px;
     border-radius: 30px;
     font-size: 16px;
@@ -11,6 +11,10 @@
     font-weight: bold;
     line-height: 19px;
     border: none;
+
+    @media screen and (max-width: 767px){
+      background-color: red;
+    }
 
     span{
         display: none;
@@ -29,7 +33,7 @@
 
     &-right-arrow {
         &:before{
-            content: "\01F862";
+            content: "\02192";
             margin-right: 13px;
         }
     }
@@ -37,7 +41,7 @@
 
     &-left-arrow {
         &::before{
-            content: "\1F860";
+            content: "\02190";
             margin-right: 13px;
         }
     }

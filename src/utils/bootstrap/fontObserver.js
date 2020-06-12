@@ -2,7 +2,7 @@ import FontFaceObserver from "fontfaceobserver"
 
 const fonts = [
   {
-    name: "Fira Sans",
+    name: "Montserrat",
     weight: 400,
   },
 ]
