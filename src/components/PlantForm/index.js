@@ -8,19 +8,35 @@ const PlantForm = () => {
     <form>
       <FormInput
         icon={sun}
-        question="1. Set the amount of sunlight your plant will get"
+        question={[
+          <b>1. </b>,
+          `Set the amount of `,
+          <b>sunlight</b>,
+          ` your plant will get`,
+        ]}
         options={[10, 20, 30]}
       />
 
       <FormInput
         icon={wateringcan}
-        question="2. How often do you want to water your plant"
+        question={[
+          <b>2. </b>,
+          `How often do you want to `,
+          <b>water</b>,
+          ` your plant`,
+        ]}
         options={[10, 20, 30]}
+        mirrorImg
       />
 
       <FormInput
         icon={dog}
-        question="3. Do you have plants? Do they chew plants?"
+        question={[
+          <b>3. </b>,
+          `Do you have `,
+          <b>pets</b>,
+          `? Do they chew plants?`,
+        ]}
         options={[10, 20, 30]}
       />
     </form>

@@ -1,10 +1,12 @@
 import "./FormInput.styl"
 
-const FormInput = ({ icon, question, options }) => {
+const FormInput = ({ icon, question, options, mirrorImg }) => {
+  const mirrorClass = mirrorImg ? "mirror" : " "
+
   return (
     <section className="form-input">
       <div className="image-wrapper">
-        <img src={icon} className="icon" />
+        <img src={icon} className={`icon ${mirrorClass}`} />
       </div>
       <p className="text">{question}</p>
       <select className="select">

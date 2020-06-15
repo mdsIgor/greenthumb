@@ -1,3 +1,6 @@
+@import "../../styles/settings/variables.styl";
+@import "../../styles/settings/breakpoints.styl";
+
 .form-input{
   display: flex;
   flex-direction: column;
@@ -12,8 +15,14 @@
 
   }
 
+  .mirror {
+    transform: scaleX(-1);
+  }
+
   >.text {
     margin-bottom: 24px;
+    font-size: 14px;
+    color: $color-grey-text-question;
   }
 
   >.select {
@@ -21,6 +30,10 @@
     padding: 6px 20px;
     background-color: white;
     appearance: none;
+    background-image: url("../../images/downArrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    color: $color-grey-text-disabled;
 
     &:after {
      content: "a";
