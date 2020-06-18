@@ -3,5 +3,36 @@
 
 .results-conatiner {
   background-color: $color-bg-results;
-  padding: 47px 30px;
+  padding: 47px 40px 0 30px;
+
+
+
+  >.no-results{
+    color: $color-grey-text-disabled;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >.title{
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 55px;
+      margin-bottom: 16px;
+    }
+
+    >.text {
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 48px;
+
+    }
+
+    >.plants-img {
+      width: 285px;
+      height: auto;
+    }
+  }
+
+
 }

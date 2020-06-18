@@ -9,15 +9,17 @@ import "./Home.styl"
 
 const Home = () => {
   return (
-    <>
-      <div className="home-wrapper">
-        <Logo />
-        <h1 className="title">Find your next green friend</h1>
-        <PlantForm />
-      </div>
+    <Container>
+      <>
+        <div className="home-wrapper">
+          <Logo />
+          <h1 className="title">Find your next green friend</h1>
+          <PlantForm />
+        </div>
 
-      <Results />
-    </>
+        <Results />
+      </>
+    </Container>
   )
 }
 
