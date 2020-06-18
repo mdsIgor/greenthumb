@@ -14,7 +14,7 @@ const PlantForm = () => {
           <b>sunlight</b>,
           ` your plant will get`,
         ]}
-        options={[10, 20, 30]}
+        options={["High", "Low", "No"]}
       />
 
       <FormInput
@@ -25,7 +25,7 @@ const PlantForm = () => {
           <b>water</b>,
           ` your plant`,
         ]}
-        options={[10, 20, 30]}
+        options={["Daily", "Regularly", "Rarely"]}
         mirrorImg
       />
 
@@ -37,7 +37,7 @@ const PlantForm = () => {
           <b>pets</b>,
           `? Do they chew plants?`,
         ]}
-        options={[10, 20, 30]}
+        options={["Yes", "No"]}
       />
     </form>
   )
